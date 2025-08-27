@@ -18,7 +18,7 @@ st.write('The Name on Smoothie is :', name_on_order)
 #session = get_active_session()
 cnx = st.connection("snowflake");
 session = cnx.session();
-my_dataframe = session.table("smoothies.public.orders").filter(col("ORDER_FILLED")==0).collect()
+#my_dataframe = session.table("smoothies.public.orders").filter(col("ORDER_FILLED")==0).collect()
 
 #editable_df = st.data_editor(my_dataframe)
 
